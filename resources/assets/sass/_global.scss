@@ -1,0 +1,280 @@
+body {
+  position: relative; 
+}
+
+// Global Responsive Text
+html {
+    font-size: .8rem;
+  }
+  
+  @include media-breakpoint-up(sm) {
+    html {
+      font-size: .8rem;
+    }
+  }
+  
+  @include media-breakpoint-up(md) {
+    html {
+      font-size: .9rem;
+    }
+  }
+  
+  @include media-breakpoint-up(lg) {
+    html {
+      font-size: 1rem;
+    }
+  }
+
+  .card {
+    background: transparent;
+  }
+
+  // Sections
+
+.base {
+position: relative;
+height: 300vh;
+background: green;
+}
+
+.oneyellow {
+height: 300vh;
+background: white;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+transition: 2s;
+padding-top: 56rem;
+
+.img-backing-card {
+  height: 50vh;
+  background: 	#50414c;
+  position: relative;
+  width: 50vw;
+  margin-left: 20rem;
+  margin-top: 3rem;
+}
+
+img {
+  position: absolute;
+  top: 120px;
+  left: 0;
+}
+
+.card3 {
+    top: -400px;
+    right: -400px;                    
+}
+
+}
+
+// Twoblue Section
+.twoblue {
+height: 300vh;
+background: $primary;
+
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+// z-index: 20000;
+transition: 2s;
+  h1 {
+    color: $sec2-heading-color;
+    // font-weight: 600;
+  }
+
+  h2 {
+    color: $sec2-heading-color;
+    font-weight: 600;
+    margin-bottom: $h2headings-margin-bottom;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-top: 10rem;
+    color: white;
+  }
+
+  p {
+    color: $sec2-paragraph-color;
+  }
+
+  .arrow-svg {
+    fill: white;
+    width: 3rem;
+   height: auto;
+  }
+
+  // Twoblue Section Cards and Animations
+  // img {
+  //   width: 30rem;
+  // }
+
+  
+
+  .card-move {
+    animation: bla 2s;
+    // width: 30rem;
+  }
+ 
+  @keyframes bla {
+    from {
+      transform: translateY(850px);
+      // width: 0;
+      opacity: 0;
+      // transform: translateX(0, 500px) rotate(0);
+      
+    }
+
+    // 50% {
+    //   transform: translateY(350px);
+    //   // transform: translateX(0, 0) rotate(180deg);
+    // }
+
+    to {
+      transform: translateY(0);
+      // max-width: 100%;
+      opacity: 1;
+      // transform: translateX(0, 0) rotate(0);
+    }
+
+  }
+ 
+  .card-move2 {
+    animation: bla2 3s;
+    background: transparent;
+    
+  }
+    @keyframes bla2 {
+      from {
+        transform: translateY(550px);
+        // width: 0;
+        opacity: 0;
+      }
+
+      to {
+        transform: translateY(0);
+        // z-index: 30000;
+        // width: 100%;
+        opacity: 1;
+      }
+    }
+                                                     
+}
+
+
+.card-move3 {
+  animation: bla3 3s;
+  // background: transparent;
+  
+}
+  @keyframes bla3 {
+    from {
+      transform: translateX(-850px);
+      // width: 0;
+      opacity: 0;
+    }
+
+    to {
+      transform: translateX(0);
+      // z-index: 30000;
+      // width: 100%;
+      opacity: 1;
+    }
+  }
+
+  .card-move4 {
+    animation: bla4 3s;
+    // background: transparent;
+    
+  }
+    @keyframes bla4 {
+      from {
+        transform: translateX(850px);
+        // width: 0;
+        opacity: 0;
+      }
+  
+      to {
+        transform: translateX(0);
+        // z-index: 30000;
+        // width: 100%;
+        opacity: 1;
+      }
+    }
+
+    .card-move5 {
+      animation: bla5 3s;
+      // background: transparent;
+      
+    }
+      @keyframes bla5 {
+        from {
+          transform: translateY(850px);
+          // width: 0;
+          // opacity: 0;
+        }
+    
+        to {
+          transform: translateY(0);
+          // z-index: 30000;
+          // width: 100%;
+          // opacity: 1;
+        }
+      }
+.threered {
+height: 300vh;
+background: white;                                                            
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+transition: 2s;
+
+.hero {
+  color: #414c50;
+}
+
+  h1 {
+    // color: $sec1-heading-color;
+    font-weight: 900;
+  }
+
+  // p {
+  //   color: $sec1-paragraph-color;
+  // }
+
+  a {
+    text-decoration: none;
+  }
+
+  
+
+
+  .arrow-svg {
+   width: 3rem;
+   height: auto;
+   fill: #414c50;
+   
+  }
+
+  .tc-logo-svg {
+    width: 15rem;
+    fill: white;
+    stroke: black;
+  }
+}
+
+.fourblack {
+  height: 300vh;
+  background: #1F2426;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: 2s;
+}
+
